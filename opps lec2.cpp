@@ -38,7 +38,13 @@ class Student{
     *cgpaptr = *obj.cgpaptr;//obj ke pointer ke andar jo CGPA value hai, usko current object (s2) ke pointer ke andar store kar rahe hai
     
   }
-  
+  void getinfo(){
+    cout<<"Name: "<<name<<endl;
+    cout<<"Age: "<<age<<endl;
+    // // // cout<<"CGPA: "<<cgpa<<endl; 
+    cout<<"cgpa:"<<cgpaptr<<endl; // print the address of the pointer
+    cout<<"cgpa:"<<*cgpaptr<<endl; // print the value of the double pointed to by the pointer
+  }
 
 }; 
 int main(){
